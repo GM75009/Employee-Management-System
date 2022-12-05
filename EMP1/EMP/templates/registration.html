@@ -1,0 +1,31 @@
+{% include 'header.html' %}
+<center>
+<div class="card m-5">
+    <div class="card-body">
+        <h3 class="p-2" style="border-bottom : 2px solid orange">Create an Account</h3>
+        <form method="POST" action="{% url 'guru2' %}">
+            {% csrf_token %}
+           <br> <label>
+                USERNAME:
+            </label>
+            <input type="text" name="u">
+            <br>
+
+    <label>
+                  Password:
+            </label>
+            <input type="password" name="p">
+            <br>
+            <label>
+                Password Confirmation:
+          </label>
+          <input type="password" name="pc">
+          <br>
+          <a href="http://127.0.0.1:8000/index">
+        <input type="submit" value="register"> </a>
+
+        </form>
+
+    </div>
+</div>
+</center>

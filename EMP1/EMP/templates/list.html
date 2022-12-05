@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><br>
+            "LISTING ALL EMPLOYEE DETAILS"
+        </h1>
+        <br><br><br><br>
+    <table style="width: 100%" border="3"  >
+
+    
+     <thead>
+        <tr>
+            <th>
+                Employee-Name:
+            </th>
+            <th>
+                Code:
+            </th>
+            <th>
+                Department:
+            </th>
+            <th>
+                Designation:
+            </th>
+        </tr>
+     </thead>
+     <tbody>
+
+     
+     {% for i in em %}
+
+<tr>
+    <td>
+        {{i.name}}
+    </td>
+    <td>
+        {{i.empcode}}
+    </td>
+    <td>
+        {{i.empdept}}
+    </td>
+    <td>
+        {{i.designations}}
+    </td>
+   
+</tr> {% endfor %} </tbody>  </table></center> </body>
+</html>
